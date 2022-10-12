@@ -1,0 +1,23 @@
+{
+	"Language":"EN",
+	"Numbers":
+			[
+				{"FromValue":0,"ToValue":20,"Sounds":["D*N"]},
+				{"FromValue":21,"ToValue":29,"Sounds":["D*T","D*C"]},
+				{"FromValue":30,"ToValue":30,"Sounds":["D*N"]},
+				{"FromValue":31,"ToValue":39,"Sounds":["D*T","D*C"]},
+				{"FromValue":40,"ToValue":40,"Sounds":["D*N"]},
+				{"FromValue":41,"ToValue":49,"Sounds":["D*T","D*C"]},
+				{"FromValue":50,"ToValue":50,"Sounds":["D*N"]},
+				{"FromValue":51,"ToValue":59,"Sounds":["D*T","D*C"]},
+				{"FromValue":60,"ToValue":60,"Sounds":["D*N"]},
+				{"FromValue":61,"ToValue":69,"Sounds":["D*T","D*C"]},
+				{"FromValue":70,"ToValue":70,"Sounds":["D*N"]},
+				{"FromValue":71,"ToValue":79,"Sounds":["D*T","D*C"]},
+				{"FromValue":80,"ToValue":80,"Sounds":["D*N"]},
+				{"FromValue":81,"ToValue":89,"Sounds":["D*T","D*C"]},
+				{"FromValue":90,"ToValue":90,"Sounds":["D*N"]},
+				{"FromValue":91,"ToValue":99,"Sounds":["D*T","D*C"]},
+				{"FromValue":100,"ToValue":100,"Sounds":["D*N"]},
+			]
+}

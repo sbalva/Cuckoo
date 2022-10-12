@@ -1,0 +1,261 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>cuckooicon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="cuckooicon.png" />
+    <None Remove="Sounds\beep.wav" />
+    <None Remove="Sounds\DE\D0.mp3" />
+    <None Remove="Sounds\DE\D0.wav" />
+    <None Remove="Sounds\DE\D1.mp3" />
+    <None Remove="Sounds\DE\D1.wav" />
+    <None Remove="Sounds\DE\D10.mp3" />
+    <None Remove="Sounds\DE\D10.wav" />
+    <None Remove="Sounds\DE\D100.mp3" />
+    <None Remove="Sounds\DE\D100.wav" />
+    <None Remove="Sounds\DE\D11.mp3" />
+    <None Remove="Sounds\DE\D11.wav" />
+    <None Remove="Sounds\DE\D12.mp3" />
+    <None Remove="Sounds\DE\D12.wav" />
+    <None Remove="Sounds\DE\D13.mp3" />
+    <None Remove="Sounds\DE\D13.wav" />
+    <None Remove="Sounds\DE\D14.mp3" />
+    <None Remove="Sounds\DE\D14.wav" />
+    <None Remove="Sounds\DE\D15.mp3" />
+    <None Remove="Sounds\DE\D15.wav" />
+    <None Remove="Sounds\DE\D16.mp3" />
+    <None Remove="Sounds\DE\D16.wav" />
+    <None Remove="Sounds\DE\D17.mp3" />
+    <None Remove="Sounds\DE\D17.wav" />
+    <None Remove="Sounds\DE\D18.mp3" />
+    <None Remove="Sounds\DE\D18.wav" />
+    <None Remove="Sounds\DE\D19.mp3" />
+    <None Remove="Sounds\DE\D19.wav" />
+    <None Remove="Sounds\DE\D2.mp3" />
+    <None Remove="Sounds\DE\D2.wav" />
+    <None Remove="Sounds\DE\D20.mp3" />
+    <None Remove="Sounds\DE\D20.wav" />
+    <None Remove="Sounds\DE\D3.mp3" />
+    <None Remove="Sounds\DE\D3.wav" />
+    <None Remove="Sounds\DE\D30.mp3" />
+    <None Remove="Sounds\DE\D30.wav" />
+    <None Remove="Sounds\DE\D4.mp3" />
+    <None Remove="Sounds\DE\D4.wav" />
+    <None Remove="Sounds\DE\D40.mp3" />
+    <None Remove="Sounds\DE\D40.wav" />
+    <None Remove="Sounds\DE\D5.mp3" />
+    <None Remove="Sounds\DE\D5.wav" />
+    <None Remove="Sounds\DE\D50.mp3" />
+    <None Remove="Sounds\DE\D50.wav" />
+    <None Remove="Sounds\DE\D6.mp3" />
+    <None Remove="Sounds\DE\D6.wav" />
+    <None Remove="Sounds\DE\D60.mp3" />
+    <None Remove="Sounds\DE\D60.wav" />
+    <None Remove="Sounds\DE\D7.mp3" />
+    <None Remove="Sounds\DE\D7.wav" />
+    <None Remove="Sounds\DE\D70.mp3" />
+    <None Remove="Sounds\DE\D70.wav" />
+    <None Remove="Sounds\DE\D8.mp3" />
+    <None Remove="Sounds\DE\D8.wav" />
+    <None Remove="Sounds\DE\D80.mp3" />
+    <None Remove="Sounds\DE\D80.wav" />
+    <None Remove="Sounds\DE\D9.mp3" />
+    <None Remove="Sounds\DE\D9.wav" />
+    <None Remove="Sounds\DE\D90.mp3" />
+    <None Remove="Sounds\DE\D90.wav" />
+    <None Remove="Sounds\DE\schema.json" />
+    <None Remove="Sounds\DE\und.mp3" />
+    <None Remove="Sounds\DE\und.wav" />
+    <None Remove="Sounds\EN\D0.wav" />
+    <None Remove="Sounds\EN\D1.wav" />
+    <None Remove="Sounds\EN\D10.wav" />
+    <None Remove="Sounds\EN\D100.wav" />
+    <None Remove="Sounds\EN\D11.wav" />
+    <None Remove="Sounds\EN\D12.wav" />
+    <None Remove="Sounds\EN\D13.wav" />
+    <None Remove="Sounds\EN\D14.wav" />
+    <None Remove="Sounds\EN\D15.wav" />
+    <None Remove="Sounds\EN\D16.wav" />
+    <None Remove="Sounds\EN\D17.wav" />
+    <None Remove="Sounds\EN\D18.wav" />
+    <None Remove="Sounds\EN\D19.wav" />
+    <None Remove="Sounds\EN\D2.wav" />
+    <None Remove="Sounds\EN\D20.wav" />
+    <None Remove="Sounds\EN\D3.wav" />
+    <None Remove="Sounds\EN\D30.wav" />
+    <None Remove="Sounds\EN\D4.wav" />
+    <None Remove="Sounds\EN\D40.wav" />
+    <None Remove="Sounds\EN\D5.wav" />
+    <None Remove="Sounds\EN\D50.wav" />
+    <None Remove="Sounds\EN\D6.wav" />
+    <None Remove="Sounds\EN\D60.wav" />
+    <None Remove="Sounds\EN\D7.wav" />
+    <None Remove="Sounds\EN\D70.wav" />
+    <None Remove="Sounds\EN\D8.wav" />
+    <None Remove="Sounds\EN\D80.wav" />
+    <None Remove="Sounds\EN\D9.wav" />
+    <None Remove="Sounds\EN\D90.wav" />
+    <None Remove="Sounds\EN\schema.json" />
+    <None Remove="Sounds\sinbeep.wav" />
+    <None Remove="Sounds\UA\D0.wav" />
+    <None Remove="Sounds\UA\D1.wav" />
+    <None Remove="Sounds\UA\D10.wav" />
+    <None Remove="Sounds\UA\D100.wav" />
+    <None Remove="Sounds\UA\D11.wav" />
+    <None Remove="Sounds\UA\D12.wav" />
+    <None Remove="Sounds\UA\D13.wav" />
+    <None Remove="Sounds\UA\D14.wav" />
+    <None Remove="Sounds\UA\D15.wav" />
+    <None Remove="Sounds\UA\D16.wav" />
+    <None Remove="Sounds\UA\D17.wav" />
+    <None Remove="Sounds\UA\D18.wav" />
+    <None Remove="Sounds\UA\D19.wav" />
+    <None Remove="Sounds\UA\D2.wav" />
+    <None Remove="Sounds\UA\D20.wav" />
+    <None Remove="Sounds\UA\D3.wav" />
+    <None Remove="Sounds\UA\D30.wav" />
+    <None Remove="Sounds\UA\D4.wav" />
+    <None Remove="Sounds\UA\D40.wav" />
+    <None Remove="Sounds\UA\D5.wav" />
+    <None Remove="Sounds\UA\D50.wav" />
+    <None Remove="Sounds\UA\D6.wav" />
+    <None Remove="Sounds\UA\D60.wav" />
+    <None Remove="Sounds\UA\D7.wav" />
+    <None Remove="Sounds\UA\D70.wav" />
+    <None Remove="Sounds\UA\D8.wav" />
+    <None Remove="Sounds\UA\D80.wav" />
+    <None Remove="Sounds\UA\D9.wav" />
+    <None Remove="Sounds\UA\D90.wav" />
+    <None Remove="Sounds\UA\schema.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="cuckooicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Sounds\beep.wav" />
+    <EmbeddedResource Include="Sounds\DE\D0.wav" />
+    <EmbeddedResource Include="Sounds\DE\D1.wav" />
+    <EmbeddedResource Include="Sounds\DE\D10.wav" />
+    <EmbeddedResource Include="Sounds\DE\D100.wav" />
+    <EmbeddedResource Include="Sounds\DE\D11.wav" />
+    <EmbeddedResource Include="Sounds\DE\D12.wav" />
+    <EmbeddedResource Include="Sounds\DE\D13.wav" />
+    <EmbeddedResource Include="Sounds\DE\D14.wav" />
+    <EmbeddedResource Include="Sounds\DE\D15.wav" />
+    <EmbeddedResource Include="Sounds\DE\D16.wav" />
+    <EmbeddedResource Include="Sounds\DE\D17.wav" />
+    <EmbeddedResource Include="Sounds\DE\D18.wav" />
+    <EmbeddedResource Include="Sounds\DE\D19.wav" />
+    <EmbeddedResource Include="Sounds\DE\D2.wav" />
+    <EmbeddedResource Include="Sounds\DE\D20.wav" />
+    <EmbeddedResource Include="Sounds\DE\D3.wav" />
+    <EmbeddedResource Include="Sounds\DE\D30.wav" />
+    <EmbeddedResource Include="Sounds\DE\D4.wav" />
+    <EmbeddedResource Include="Sounds\DE\D40.wav" />
+    <EmbeddedResource Include="Sounds\DE\D5.wav" />
+    <EmbeddedResource Include="Sounds\DE\D50.wav" />
+    <EmbeddedResource Include="Sounds\DE\D6.wav" />
+    <EmbeddedResource Include="Sounds\DE\D60.wav" />
+    <EmbeddedResource Include="Sounds\DE\D7.wav" />
+    <EmbeddedResource Include="Sounds\DE\D70.wav" />
+    <EmbeddedResource Include="Sounds\DE\D8.wav" />
+    <EmbeddedResource Include="Sounds\DE\D80.wav" />
+    <EmbeddedResource Include="Sounds\DE\D9.wav" />
+    <EmbeddedResource Include="Sounds\DE\D90.wav" />
+    <EmbeddedResource Include="Sounds\DE\schema.json" />
+    <EmbeddedResource Include="Sounds\DE\und.wav" />
+    <EmbeddedResource Include="Sounds\EN\D0.wav" />
+    <EmbeddedResource Include="Sounds\EN\D1.wav" />
+    <EmbeddedResource Include="Sounds\EN\D10.wav" />
+    <EmbeddedResource Include="Sounds\EN\D100.wav" />
+    <EmbeddedResource Include="Sounds\EN\D11.wav" />
+    <EmbeddedResource Include="Sounds\EN\D12.wav" />
+    <EmbeddedResource Include="Sounds\EN\D13.wav" />
+    <EmbeddedResource Include="Sounds\EN\D14.wav" />
+    <EmbeddedResource Include="Sounds\EN\D15.wav" />
+    <EmbeddedResource Include="Sounds\EN\D16.wav" />
+    <EmbeddedResource Include="Sounds\EN\D17.wav" />
+    <EmbeddedResource Include="Sounds\EN\D18.wav" />
+    <EmbeddedResource Include="Sounds\EN\D19.wav" />
+    <EmbeddedResource Include="Sounds\EN\D2.wav" />
+    <EmbeddedResource Include="Sounds\EN\D20.wav" />
+    <EmbeddedResource Include="Sounds\EN\D3.wav" />
+    <EmbeddedResource Include="Sounds\EN\D30.wav" />
+    <EmbeddedResource Include="Sounds\EN\D4.wav" />
+    <EmbeddedResource Include="Sounds\EN\D40.wav" />
+    <EmbeddedResource Include="Sounds\EN\D5.wav" />
+    <EmbeddedResource Include="Sounds\EN\D50.wav" />
+    <EmbeddedResource Include="Sounds\EN\D6.wav" />
+    <EmbeddedResource Include="Sounds\EN\D60.wav" />
+    <EmbeddedResource Include="Sounds\EN\D7.wav" />
+    <EmbeddedResource Include="Sounds\EN\D70.wav" />
+    <EmbeddedResource Include="Sounds\EN\D8.wav" />
+    <EmbeddedResource Include="Sounds\EN\D80.wav" />
+    <EmbeddedResource Include="Sounds\EN\D9.wav" />
+    <EmbeddedResource Include="Sounds\EN\D90.wav" />
+    <EmbeddedResource Include="Sounds\EN\schema.json" />
+    <EmbeddedResource Include="Sounds\sinbeep.wav" />
+    <EmbeddedResource Include="Sounds\UA\D0.wav" />
+    <EmbeddedResource Include="Sounds\UA\D1.wav" />
+    <EmbeddedResource Include="Sounds\UA\D10.wav" />
+    <EmbeddedResource Include="Sounds\UA\D100.wav" />
+    <EmbeddedResource Include="Sounds\UA\D11.wav" />
+    <EmbeddedResource Include="Sounds\UA\D12.wav" />
+    <EmbeddedResource Include="Sounds\UA\D13.wav" />
+    <EmbeddedResource Include="Sounds\UA\D14.wav" />
+    <EmbeddedResource Include="Sounds\UA\D15.wav" />
+    <EmbeddedResource Include="Sounds\UA\D16.wav" />
+    <EmbeddedResource Include="Sounds\UA\D17.wav" />
+    <EmbeddedResource Include="Sounds\UA\D18.wav" />
+    <EmbeddedResource Include="Sounds\UA\D19.wav" />
+    <EmbeddedResource Include="Sounds\UA\D2.wav" />
+    <EmbeddedResource Include="Sounds\UA\D20.wav" />
+    <EmbeddedResource Include="Sounds\UA\D3.wav" />
+    <EmbeddedResource Include="Sounds\UA\D30.wav" />
+    <EmbeddedResource Include="Sounds\UA\D4.wav" />
+    <EmbeddedResource Include="Sounds\UA\D40.wav" />
+    <EmbeddedResource Include="Sounds\UA\D5.wav" />
+    <EmbeddedResource Include="Sounds\UA\D50.wav" />
+    <EmbeddedResource Include="Sounds\UA\D6.wav" />
+    <EmbeddedResource Include="Sounds\UA\D60.wav" />
+    <EmbeddedResource Include="Sounds\UA\D7.wav" />
+    <EmbeddedResource Include="Sounds\UA\D70.wav" />
+    <EmbeddedResource Include="Sounds\UA\D8.wav" />
+    <EmbeddedResource Include="Sounds\UA\D80.wav" />
+    <EmbeddedResource Include="Sounds\UA\D9.wav" />
+    <EmbeddedResource Include="Sounds\UA\D90.wav" />
+    <EmbeddedResource Include="Sounds\UA\schema.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="cuckooicon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

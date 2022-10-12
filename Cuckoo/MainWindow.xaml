@@ -1,0 +1,47 @@
+﻿<Window x:Class="Cuckoo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cuckoo"
+        mc:Ignorable="d"
+        DataContext="{StaticResource CuckooModel}"
+        Title="Cuckoo" SizeToContent="Height" MinWidth="900" Width="900" MinHeight="{Binding MinHeight}" Background="WhiteSmoke" Topmost="{Binding OnTop, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Icon="/cuckooicon.png">    
+    <Grid>        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Margin="5,5,5,15" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition MinWidth="60" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition MinWidth="80" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition MinWidth="60" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition MinWidth="45" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition MinWidth="85" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Timer type" Padding="5,2" />
+            <ComboBox Grid.Column="1" ItemsSource="{Binding AllTimerTypes, Mode=OneTime}" SelectedItem="{Binding TimerType, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" IsEnabled="{Binding OptionsEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"  />
+            <TextBlock Grid.Column="2" Text="Beep type" Padding="5,2" Margin="10,0,0,0" />
+            <ComboBox Grid.Column="3" ItemsSource="{Binding AllBeeps, Mode=OneTime}" SelectedItem="{Binding Beep, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" IsEnabled="{Binding OptionsEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Grid.Column="4" Text="Language" Padding="5,2" Margin="10,0,0,0" />
+            <ComboBox Grid.Column="5" ItemsSource="{Binding AllLanguages, Mode=OneTime}" SelectedItem="{Binding SpeakLanguage, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" IsEnabled="{Binding OptionsEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Grid.Column="6" Text="Voice interval (sec.)" Padding="5,2" Margin="10,0,0,0" Visibility="{Binding ShowInterval, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+            <ComboBox Grid.Column="7" ItemsSource="{Binding Intervals, Mode=OneTime}" SelectedItem="{Binding Interval, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Visibility="{Binding ShowInterval, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding OptionsEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Grid.Column="8" Text="Speak pattern" Padding="5,2" Margin="10,0,0,0" Visibility="{Binding ShowPattern, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+            <ComboBox Grid.Column="9" ItemsSource="{Binding AllSpeakPatterns, Mode=OneTime}" SelectedItem="{Binding Pattern, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" Visibility="{Binding ShowPattern, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding OptionsEnabled, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+            <Button  Command="{Binding ActionCommand}" Margin="10,0,0,0" Grid.Column="10" Content="{Binding ActionText, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Padding="5,2" Width="45" FontWeight="Bold"  />
+            <Button Grid.Column="11" Command="{Binding ChangeOnTopCommand}" Content="On Top" Padding="5,2" Background="{Binding OnTopButtonColor, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Margin="10,0,0,0"  />
+        </Grid>
+        <Viewbox Grid.Row="1" Visibility="{Binding ShowTime, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" >
+            <TextBlock Text="{Binding TimeText, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  />
+        </Viewbox>
+    </Grid>
+</Window>
